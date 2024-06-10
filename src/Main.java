@@ -19,12 +19,17 @@ public class Main {
 //        System.out.println("You are done!");
 
         MyThread thread2 = new MyThread();
+                thread2.setDaemon(true);
 
         thread2.start();
-        System.out.println(thread2.isAlive());
+//        System.out.println(thread2.isAlive());
         thread2.setName("heyyyyyy");
         System.out.println(thread2.getName());
         thread2.setPriority(7);
+
+
+
+        System.out.println(thread2.isDaemon());
         System.out.println(thread2.getPriority());
 
                 System.out.println(Thread.activeCount());
