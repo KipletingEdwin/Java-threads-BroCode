@@ -7,15 +7,22 @@ public class Main {
 //        Thread.currentThread().setName("nainnnnnnnn");
 //        System.out.println(Thread.currentThread().getName());
 
-        Thread.currentThread().setPriority(9);
+//        Thread.currentThread().setPriority(9);
+//
+//        System.out.println(Thread.currentThread().getPriority());
+//        System.out.println(Thread.currentThread().isAlive());
+//
+//        for(int i = 3; i >= 0;i--){
+//            System.out.println(i);
+//            Thread.sleep(2000);
+//        }
+//        System.out.println("You are done!");
 
-        System.out.println(Thread.currentThread().getPriority());
-        System.out.println(Thread.currentThread().isAlive());
+        MyThread thread2 = new MyThread();
 
-        for(int i = 3; i >= 0;i--){
-            System.out.println(i);
-            Thread.sleep(2000);
-        }
+        thread2.start();
+        System.out.println(thread2.isAlive());
+        System.out.println(thread2.getName());
 
     }
 }
