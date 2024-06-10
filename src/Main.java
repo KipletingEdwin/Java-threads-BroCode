@@ -7,7 +7,7 @@ public class Main {
 //        Thread.currentThread().setName("nainnnnnnnn");
 //        System.out.println(Thread.currentThread().getName());
 
-//        Thread.currentThread().setPriority(9);
+        Thread.currentThread().setPriority(9);
 //
 //        System.out.println(Thread.currentThread().getPriority());
 //        System.out.println(Thread.currentThread().isAlive());
@@ -22,7 +22,12 @@ public class Main {
 
         thread2.start();
         System.out.println(thread2.isAlive());
+        thread2.setName("heyyyyyy");
         System.out.println(thread2.getName());
+        thread2.setPriority(7);
+        System.out.println(thread2.getPriority());
+
+                System.out.println(Thread.activeCount());
 
     }
 }
